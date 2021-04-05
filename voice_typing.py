@@ -28,7 +28,7 @@ def speechToText():
     msg = ''
     try:
         print('Recognizing...')
-        msg = r.recognize_google(audio, language='en-in')           # Audio Recognition and Conversion to text
+        msg = r.recognize_google(audio, language='en-in')           # audio recognition and conversion to text
     except:
         print('Please! Say that Again')
 
