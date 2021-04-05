@@ -10,9 +10,9 @@ root = Tk()
 root.title('GovNaB Voice Typing')
 width_x = 300
 width_y = 170
-root.geometry(f'{x}x{y}')
-root.minsize(x, y)
-root.maxsize(x, y)
+root.geometry(f'{width_x}x{width_y}')
+root.minsize(width_x, width_y)
+root.maxsize(width_x, width_y)
 
 def speechToText():
     '''
