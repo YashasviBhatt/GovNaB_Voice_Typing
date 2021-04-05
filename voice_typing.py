@@ -8,8 +8,8 @@ root = Tk()
 
 # Configuring TKinter Window
 root.title('GovNaB Voice Typing')
-x = 300
-y = 170
+width_x = 300
+width_y = 170
 root.geometry(f'{x}x{y}')
 root.minsize(x, y)
 root.maxsize(x, y)
@@ -41,7 +41,7 @@ def writeOnSceen():
     :return: success status
     '''
     coord_x, coord_y = entry_message.winfo_rootx(), entry_message.winfo_rooty()         # fetching coordinates
-    pyautogui.click(x=coord_x, y=coord_y)                                               # clicking on the box
+    pyautogui.click(x=coord_x, y=coord_y)                                               # clicking on the text area
     msg = speechToText()                                                                # converting to text
     pyautogui.write(msg, interval=0.01)                                                 # writing message on Text Area
 
